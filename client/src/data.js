@@ -29,6 +29,7 @@ export const categories = [
     title: "SHIRT STYLE!",
     cat: "women",
   },
+
   {
     id: 2,
     img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -62,7 +63,7 @@ export const popularProducts = [
   },
   {
     id: 5,
-    img: "https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+    img: "https://unsplash.com/photos/Fg15LdqpWrs",
   },
   {
     id: 6,

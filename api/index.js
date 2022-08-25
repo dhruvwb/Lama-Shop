@@ -20,6 +20,12 @@ mongoose
 // app.get("/api/test", () => {
 //     console.log("Test is Successfull");
 // })
+const cors = require("cors");
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.use(express.json());
 app.use("/api/auth", authRoute);

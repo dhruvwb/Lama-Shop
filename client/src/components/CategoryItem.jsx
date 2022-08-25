@@ -1,7 +1,7 @@
-import { Link } from "@material-ui/core";
+// import { Link } from "@material-ui/core";
 import styled from "styled-components";
 import { mobile } from "../responsive";
-
+import { Link } from "react-router-dom";
 const Container = styled.div`
   flex: 1;
   margin: 5px;
@@ -12,7 +12,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  ${mobile({ height: "30vh" })}
+  ${mobile({ height: "30vh", objectFit: "cover" })}
 `;
 const Info = styled.div`
   position: absolute;
@@ -23,10 +23,24 @@ const Info = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  ${mobile({
+    alignItem: "center",
+    JustifyContent: "center",
+    textAlign: "center",
+    top: "20px",
+    color: "white",
+  })}
 `;
 const Title = styled.h1`
   font-weight: bolder;
   color: black;
+  ${mobile({
+    textAlign: "center",
+    JustifyContent: "center",
+    alignItem: "center",
+    color: "white",
+    objectFit: "contain",
+  })}
 `;
 const Button = styled.button`
   border: none;
